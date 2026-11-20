@@ -1,0 +1,286 @@
+html{
+  background-color: #f7f4ef;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2620;
+  line-height: 1.6;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6ded3;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span{
+  color: #a9743f;
+}
+
+nav a{
+  margin: 0 12px;
+  color: #6b6157;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover{
+  color: #a9743f;
+}
+
+.tel{
+  color: #2b2620;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section{
+  padding: 60px 30px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.hero{
+  padding: 80px 30px;
+  text-align: center;
+  background-color: #efe6da;
+  border-radius: 24px;
+  max-width: 1150px;
+  margin: 25px auto;
+}
+
+.hero h1{
+  font-size: 46px;
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+}
+
+.hero p{
+  color: #6b6157;
+  font-size: 18px;
+  margin: 0 auto 30px auto;
+  max-width: 520px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #a9743f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.15s;
+}
+
+.btn:hover{
+  background-color: #8d5f31;
+}
+
+.btn:active{
+  background-color: #6f4a26;
+  transform: translateY(3px);
+}
+
+h2{
+  font-size: 32px;
+  margin: 0 0 8px 0;
+}
+
+.sub{
+  color: #6b6157;
+  margin: 0 0 30px 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.card{
+  background-color: #ffffff;
+  border: 1px solid #e6ded3;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+}
+
+.card:hover{
+  box-shadow: 0 12px 28px -14px rgba(0,0,0,0.35);
+}
+
+.card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.info{
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.info h3{
+  margin: 0 0 6px 0;
+  font-size: 19px;
+}
+
+.info p{
+  margin: 0 0 12px 0;
+  color: #6b6157;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.price{
+  font-size: 22px;
+  font-weight: bold;
+  color: #a9743f;
+  margin-bottom: 12px;
+}
+
+.buy{
+  width: 100%;
+  padding: 12px;
+  background-color: #2b2620;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.buy:hover{
+  background-color: #a9743f;
+}
+
+.buy:active{
+  background-color: #6f4a26;
+  transform: translateY(2px);
+}
+
+.plus{
+  background-color: #ffffff;
+  border: 1px solid #e6ded3;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.ico{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.plus h3{
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.plus p{
+  margin: 0;
+  color: #6b6157;
+  font-size: 14px;
+}
+
+#orderForm{
+  display: grid;
+  gap: 12px;
+  max-width: 480px;
+}
+
+#orderForm input{
+  padding: 14px;
+  border: 1px solid #ddd3c6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#orderForm select{
+  padding: 14px;
+  border: 1px solid #ddd3c6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#orderForm textarea{
+  padding: 14px;
+  border: 1px solid #ddd3c6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  min-height: 100px;
+}
+
+#orderForm button{
+  padding: 15px;
+  background-color: #25D366;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#orderForm button:hover{
+  background-color: #1da851;
+}
+
+#orderForm button:active{
+  background-color: #17853f;
+  transform: translateY(2px);
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 25px 30px;
+  background-color: #2b2620;
+  color: #cfc5b8;
+  font-size: 14px;
+}
+
+@media (max-width: 700px){
+  header{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero{
+    margin: 15px;
+    padding: 50px 20px;
+  }
+  .hero h1{
+    font-size: 30px;
+  }
+  section{
+    padding: 40px 18px;
+  }
+}
